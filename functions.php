@@ -208,7 +208,7 @@ add_filter( 'excerpt_more', 'midday_excerpt_more' );
  * This behaviour is to ensure trap TAB inside the navigation once opened.
  */
 function midday_fallback_menu() {
-	$html         .= '<li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-home">';
+	$html          = '<li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-home">';
 		$html     .= '<a href="' . esc_url( home_url() ) . '">';
 			$html .= esc_html__( 'Home', 'midday' );
 		$html     .= '</a>';
