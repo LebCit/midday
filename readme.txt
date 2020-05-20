@@ -1,19 +1,20 @@
 === MidDay ===
 
-Contributors: automattic
+Contributors: lebcit
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
 
-Requires at least: 4.5
-Tested up to: 4.8
-Stable tag: 1.0.0
-License: GNU General Public License v2 or later
-License URI: LICENSE
+Requires at least: 5.2
+Tested up to: 5.4.1
+Stable tag: 20.05.20
+Requires PHP: 5.5
+License: GNU General Public License v3
+License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
-A starter theme called MidDay.
+MidDay is a clean, bold and dead simple WordPress theme. Perfect for personal or company blogs.
 
 == Description ==
 
-MidDay is a clean, bold and dead simple WordPress theme.
+MidDay is a clean, bold and dead simple WordPress theme. Perfect for personal or company blogs.
 
 == Installation ==
 
@@ -32,7 +33,12 @@ MidDay includes support for Infinite Scroll in Jetpack.
 = 1.0 - May 12 2015 =
 * Initial release
 
-== Credits ==
+== Upgrade Notice ==
 
-* Based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc., [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
-* normalize.css https://necolas.github.io/normalize.css/, (C) 2012-2018 Nicolas Gallagher and Jonathan Neal, [MIT](https://opensource.org/licenses/MIT)
+= 20.05.20 =
+* Actual stable theme version.
+
+== Resources ==
+
+* Underscores, © 2012-2020 Automattic, Inc., GPLv2 or later
+* normalize.css, © 2012-2018 Nicolas Gallagher, MIT
