@@ -160,6 +160,81 @@ function midday_customize_register( $wp_customize ) {
 		)
 	);
 
+	/**
+	 * Footer Copyright Area Section.
+	 */
+	$wp_customize->add_section(
+		'midday_footer_copyright_area_section',
+		array(
+			'title'       => esc_html__( 'Footer Copyright Area', 'midday' ),
+			'description' => __( 'Modify <b>Footer Copyright Area</b>.', 'midday' ),
+			'panel'       => 'midday_panel',
+			'priority'    => 15,
+		)
+	);
+
+	// Default copyright.
+	$wp_customize->add_setting(
+		'midday_footer_copyright_area_checkbox',
+		array(
+			'default'           => true,
+			'transport'         => 'postMessage',
+			'sanitize_callback' => 'midday_sanitize_checkbox',
+		)
+	);
+
+	$wp_customize->add_control(
+		'midday_footer_copyright_area_checkbox',
+		array(
+			'label'       => __( 'Enable/Disable Default Copyright.', 'midday' ),
+			'description' => __( 'This checkbox, once <b>unchecked</b>,<br>removes <b>Default Copyright.</b>', 'midday' ),
+			'section'     => 'midday_footer_copyright_area_section',
+			'type'        => 'checkbox',
+		)
+	);
+
+	$wp_customize->selective_refresh->add_partial(
+		'midday_footer_copyright_area_checkbox',
+		array(
+			'selector'        => '#site-info',
+			'settings'        => array( 'midday_footer_copyright_area_checkbox' ),
+			'render_callback' => 'midday_site_info',
+		)
+	);
+
+	// Custom copyright.
+	$wp_customize->add_setting(
+		'midday_custom_copyright_textarea',
+		array(
+			'default'           => '',
+			'transport'         => 'postMessage',
+			'sanitize_callback' => 'wp_kses_post', // Allow html.
+		)
+	);
+
+	$wp_customize->add_control(
+		'midday_custom_copyright_textarea',
+		array(
+			'label'       => esc_html__( 'Custom Copyright Textarea', 'midday' ),
+			'description' => __( 'To display a <b>Custom Copyright</b>,<br><b>uncheck</b> the <b>Default Copyright</b> checkbox,<br>then type a custom copyright in the textarea.<br><b>HTML</b> is allowed !', 'midday' ),
+			'section'     => 'midday_footer_copyright_area_section',
+			'type'        => 'textarea',
+			'input_attrs' => array(
+				'style'       => 'border: 1px solid #999',
+				'placeholder' => __( 'Enter Custom Copyright...', 'midday' ),
+			),
+		)
+	);
+
+	$wp_customize->selective_refresh->add_partial(
+		'midday_custom_copyright_textarea',
+		array(
+			'selector'        => '#site-info',
+			'settings'        => array( 'midday_custom_copyright_textarea' ),
+			'render_callback' => 'midday_site_info',
+		)
+	);
+
 }
 add_action( 'customize_register', 'midday_customize_register' );
 
@@ -179,6 +254,22 @@ function midday_customize_partial_blogname() {
  */
 function midday_customize_partial_blogdescription() {
 	bloginfo( 'description' );
+}
+
+if ( ! function_exists( 'midday_sanitize_checkbox' ) ) {
+	/**
+	 * Switch sanitization
+	 *
+	 * @param string $input Switch value.
+	 * @return integer  Sanitized value
+	 */
+	function midday_sanitize_checkbox( $input ) {
+		if ( false === $input ) {
+			return 0;
+		} else {
+			return 1;
+		}
+	}
 }
 
 /**
