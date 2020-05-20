@@ -83,13 +83,13 @@ function midday_customize_register( $wp_customize ) {
 				'description'   => esc_html__( 'Choose sidebar homepage background image.', 'midday' ),
 				'section'       => 'midday_sidebar_image',
 				'button_labels' => array(
-					'select'       => __( 'Select Image' ),
-					'change'       => __( 'Change Image' ),
-					'remove'       => __( 'Remove' ),
-					'default'      => __( 'Default' ),
-					'placeholder'  => __( 'No image selected' ),
-					'frame_title'  => __( 'Select Image' ),
-					'frame_button' => __( 'Choose Image' ),
+					'select'       => __( 'Select Image', 'midday' ),
+					'change'       => __( 'Change Image', 'midday' ),
+					'remove'       => __( 'Remove', 'midday' ),
+					'default'      => __( 'Default', 'midday' ),
+					'placeholder'  => __( 'No image selected', 'midday' ),
+					'frame_title'  => __( 'Select Image', 'midday' ),
+					'frame_button' => __( 'Choose Image', 'midday' ),
 				),
 			)
 		)
