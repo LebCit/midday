@@ -240,6 +240,30 @@ function midday_fallback_menu() {
 }
 
 /**
+ * Output the theme's footer depending on user's choice.
+ */
+function midday_site_info() {
+	$midday_footer_copyright_area_checkbox = get_theme_mod( 'midday_footer_copyright_area_checkbox', true );
+	$midday_custom_copyright_textarea      = get_theme_mod( 'midday_custom_copyright_textarea', '' );
+	if ( ! empty( $midday_footer_copyright_area_checkbox ) ) :
+			$html  = '<a href="' . esc_url( 'https://wordpress.org/' ) . '">' . esc_html( 'Proudly powered by WordPress' ) . '</a>';
+			$html .= '<br>';
+			$html .= esc_html( 'Theme: MidDay by ' ) . '<a href="' . esc_url( 'https://lebcit.github.io/' ) . '">' . esc_html( 'LebCit' ) . '</a>';
+			echo wp_kses(
+				$html,
+				array(
+					'a'  => array(
+						'href' => array(),
+					),
+					'br' => array(),
+				)
+			);
+	elseif ( empty( $midday_footer_copyright_area_checkbox ) && ! empty( $midday_custom_copyright_textarea ) ) :
+		echo wp_kses_post( $midday_custom_copyright_textarea ); // Allow html.
+	endif;
+}
+
+/**
  * Custom template tags for this theme.
  */
 require get_template_directory() . '/inc/template-tags.php';
