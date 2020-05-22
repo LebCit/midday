@@ -24,6 +24,14 @@ MidDay is a clean, bold and dead simple WordPress theme. Perfect for personal or
 
 == Frequently Asked Questions ==
 
+= The Menu is not opening ! =
+
+This is because this menu needs at least 2 items !
+
+= The Menu is not showing children items ! =
+
+This is because this menu is a one level menu only !
+
 = Does this theme support any plugins? =
 
 MidDay includes support for Infinite Scroll in Jetpack.
