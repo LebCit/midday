@@ -30,7 +30,7 @@ MidDay includes support for Infinite Scroll in Jetpack.
 
 == Changelog ==
 
-= 1.0 - May 12 2015 =
+= 20.05.20 - May 20 2020 =
 * Initial release
 
 == Upgrade Notice ==
