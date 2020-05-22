@@ -92,8 +92,8 @@ if ( ! function_exists( 'midday_setup' ) ) :
 		add_theme_support(
 			'custom-logo',
 			array(
-				'height'      => 250,
-				'width'       => 250,
+				'height'      => 75,
+				'width'       => 150,
 				'flex-width'  => true,
 				'flex-height' => true,
 			)
@@ -160,9 +160,7 @@ function midday_js() {
 	wp_enqueue_script( 'midday-js', get_theme_file_uri( '/js/midday.js' ), array(), _S_VERSION, true );
 	// Localize the script with new data and pass php variables to JS.
 	$midday_js_data = array(
-		'midday_home'         => is_front_page() && is_home(),
-		'midday_get_header_i' => get_header_image(),
-		'midday_header_image' => header_image(),
+		/** FOR LATER USE. */
 	);
 	wp_localize_script( 'midday-js', 'midday_vars', $midday_js_data );
 }
