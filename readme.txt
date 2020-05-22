@@ -1,7 +1,7 @@
 === MidDay ===
 
 Contributors: lebcit
-Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+Tags: blog, two-columns, custom-background, custom-logo, custom-menu, featured-image-header, featured-images, sticky-post, theme-options, threaded-comments, translation-ready
 
 Requires at least: 5.2
 Tested up to: 5.4.1
