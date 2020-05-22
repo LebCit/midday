@@ -1294,12 +1294,13 @@ h3 {
     .site-header.bio::before {
         content: "";
         display: block;
-        position: absolute;
+        position: fixed;
         top: 0;
         right: 0;
         bottom: 0;
         left: 0;
         background-color: rgba(0, 0, 0, 0.6);
+        max-width: 40%;
     }
     /* The emerging W3C standard
    that is currently Firefox-only */
@@ -1318,11 +1319,11 @@ h3 {
         background-color: #81898f;
     }
     .sidebar {
-        margin: 10% 2em 0;
+        margin: 10% 2em;
         text-align: left;
     }
     .site-header.bio .sidebar {
-        position: relative;
+        position: sticky;
     }
     .site-content {
         padding: 2em 3em 0;
