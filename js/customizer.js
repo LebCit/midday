@@ -23,13 +23,28 @@
 	// Sidebar Image.
 	wp.customize("midday_sidebar_setting_image", function (value) {
 		value.bind(function (new_val) {
-			$(".site-header").css({
+			$(".home.blog .site-header").css({
 				"background-image": `url(${new_val})`,
 				"background-repeat": "no-repeat",
 				"background-position": "top",
 				"background-size": "cover",
 			});
 		});
+	});
+
+	// Listen for changes in the Customizer.
+	wp.customize.bind( 'change', function ( setting ) {
+		// Add/Remove bio (Background Image Overlay) for Sidebar Image.
+		if ( 0 === setting.id.indexOf( 'midday_sidebar_setting_image' ) ) {
+			// The _value is empty by default so we begin by listening to a non empty _value.
+			if ((setting._value) != "") {
+				console.log('plain');
+				$(".home.blog .site-header").addClass('bio');
+			} else {
+				console.log('void');
+				$(".home.blog .site-header").removeClass('bio');
+			}
+		}
 	});
 
 	// Title Color.
