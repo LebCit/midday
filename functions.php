@@ -92,10 +92,10 @@ if ( ! function_exists( 'midday_setup' ) ) :
 		add_theme_support(
 			'custom-logo',
 			array(
-				'height'      => 75,
-				'width'       => 150,
-				'flex-width'  => true,
-				'flex-height' => true,
+				'height'      => 150,
+				'width'       => 250,
+				'flex-width'  => false,
+				'flex-height' => false,
 			)
 		);
 	}
