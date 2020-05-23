@@ -10,11 +10,11 @@ Requires PHP: 5.5
 License: GNU General Public License v3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
-MidDay is a clean, bold and dead simple WordPress theme. Perfect for personal or company blogs.
+MidDay is a Responsive, clear, clean, bold and dead simple WordPress theme. Perfect for personal or company blogs.
 
 == Description ==
 
-MidDay is a clean, bold and dead simple WordPress theme. Perfect for personal or company blogs.
+MidDay is a Responsive, clear, clean, bold and dead simple WordPress theme. Perfect for personal or company blogs.
 
 == Installation ==
 
