@@ -185,7 +185,7 @@ add_filter( 'excerpt_length', 'midday_custom_excerpt_length', 999 );
  * @param string $more Link to the article.
  */
 function midday_excerpt_more( $more ) {
-	if ( ! is_single() ) {
+	if ( ! is_single() || is_admin() ) {
 		$more = sprintf(
 			'<p><a href="%1$s" class="read-more-link" role="button">%2$s</a></p>',
 			esc_url( get_permalink( get_the_ID() ) ),
