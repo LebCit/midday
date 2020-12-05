@@ -25,9 +25,9 @@
 <div id="page" class="site grid">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'midday' ); ?></a>
 
-	<div id="main-nav" aria-label="Main navigation" class="overlay" tabindex="-1">
+	<div id="main-nav" aria-label="<?php esc_attr_e( 'Main navigation', 'midday' ); ?>" class="overlay" tabindex="-1">
 			<li>
-				<a href="javascript:void(0)" id="close-button" class="close-button" aria-label="Close menu" title="Close menu">&times;</a>
+				<a href="javascript:void(0)" id="close-button" class="close-button" aria-label="<?php esc_attr_e( 'Close menu', 'midday' ); ?>" title="<?php esc_attr_e( 'Close menu', 'midday' ); ?>">&times;</a>
 			</li>
 			<div class="overlay-content">					
 					<?php
@@ -72,7 +72,7 @@
 				<ul class="nav-list">
 					<li class="nav-item">
 						<a id="menu-button" aria-controls="main-nav" aria-haspopup="true" tabindex="0" role="button">
-							MENU
+						<?php esc_html_e( 'MENU', 'midday' ); ?>
 							<span class="menu-icon" aria-hidden="true">
 								<svg version='1.1' x='0px' y='0px' width='30px' height='30px' viewBox='0 0 30 30' enable-background='new 0 0 30 30'>
 									<rect width='30' height='5' />

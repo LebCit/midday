@@ -244,9 +244,9 @@ function midday_site_info() {
 	$midday_footer_copyright_area_checkbox = get_theme_mod( 'midday_footer_copyright_area_checkbox', true );
 	$midday_custom_copyright_textarea      = get_theme_mod( 'midday_custom_copyright_textarea', '' );
 	if ( ! empty( $midday_footer_copyright_area_checkbox ) ) :
-			$html  = '<a href="' . esc_url( 'https://wordpress.org/' ) . '">' . esc_html( 'Proudly powered by WordPress' ) . '</a>';
+			$html  = '<a href="' . esc_url( __( 'https://wordpress.org/', 'midday' ) ) . '">' . esc_html__( 'Proudly powered by WordPress', 'midday' ) . '</a>';
 			$html .= '<br>';
-			$html .= esc_html( 'Theme: MidDay by ' ) . '<a href="' . esc_url( 'https://lebcit.github.io/' ) . '">' . esc_html( 'LebCit' ) . '</a>';
+			$html .= esc_html__( 'Theme: MidDay by ', 'midday' ) . '<a href="' . esc_url( __( 'https://lebcit.github.io/', 'midday' ) ) . '">' . esc_html__( 'LebCit', 'midday' ) . '</a>';
 			echo wp_kses(
 				$html,
 				array(
