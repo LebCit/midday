@@ -38,10 +38,8 @@
 		if ( 0 === setting.id.indexOf( 'midday_sidebar_setting_image' ) ) {
 			// The _value is empty by default so we begin by listening to a non empty _value.
 			if ((setting._value) != "") {
-				console.log('plain');
 				$(".home.blog .site-header").addClass('bio');
 			} else {
-				console.log('void');
 				$(".home.blog .site-header").removeClass('bio');
 			}
 		}
