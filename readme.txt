@@ -5,6 +5,7 @@ Tags: blog, two-columns, custom-background, custom-logo, custom-menu, featured-i
 
 Requires at least: 5.2
 Tested up to: 5.5.3
+Stable tag: 05.12.20
 Requires PHP: 5.5
 License: GNU General Public License v3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
@@ -37,12 +38,12 @@ MidDay includes support for Infinite Scroll in Jetpack.
 
 == Changelog ==
 
-= 20.05.20 - May 20 2020 =
+= 05.12.20 - May 20 2020 =
 * Initial release
 
 == Upgrade Notice ==
 
-= 20.05.20 =
+= 05.12.20 =
 * Actual stable theme version.
 
 == Resources ==
