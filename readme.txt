@@ -4,8 +4,7 @@ Contributors: lebcit
 Tags: blog, two-columns, custom-background, custom-logo, custom-menu, featured-image-header, featured-images, sticky-post, theme-options, threaded-comments, translation-ready
 
 Requires at least: 5.2
-Tested up to: 5.4.1
-Stable tag: 20.05.20
+Tested up to: 5.5.3
 Requires PHP: 5.5
 License: GNU General Public License v3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
