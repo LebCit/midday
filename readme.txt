@@ -50,4 +50,6 @@ MidDay includes support for Infinite Scroll in Jetpack.
 
 * Underscores, © 2012-2020 Automattic, Inc., GPLv2 or later
 * normalize.css, © 2012-2018 Nicolas Gallagher, MIT
-* background image for screenshot.png, © 2018 Liam Anderson, CC0 1.0
+* Image for theme screenshot, Copyright Liam Anderson
+  License: CC0 1.0 Universal (CC0 1.0)
+  Source: https://www.pexels.com/photo/woman-lying-on-green-grass-while-holding-pencil-1458318/
