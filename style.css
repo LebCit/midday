@@ -1209,6 +1209,10 @@ h3 {
     outline: 0.1em solid;
 }
 
+.read-more-link:visited {
+    color: #fff;
+}
+
 /* FOOTER */
 
 .site-footer {
