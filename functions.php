@@ -7,9 +7,9 @@
  * @package MidDay
  */
 
-if ( ! defined( '_S_VERSION' ) ) {
+if ( ! defined( '_MIDDAY_VERSION' ) ) {
 	// Replace the version number of the theme on each release.
-	define( '_S_VERSION', '20.05.20' );
+	define( '_MIDDAY_VERSION', '05.12.20' );
 }
 
 if ( ! function_exists( 'midday_setup' ) ) :
@@ -141,11 +141,11 @@ add_action( 'widgets_init', 'midday_widgets_init' );
  * Enqueue scripts and styles.
  */
 function midday_scripts() {
-	wp_enqueue_style( 'midday-style', get_theme_file_uri( '/style-min.css' ), array(), _S_VERSION );
+	wp_enqueue_style( 'midday-style', get_theme_file_uri( '/style-min.css' ), array(), _MIDDAY_VERSION );
 
-	wp_enqueue_script( 'midday-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'midday-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _MIDDAY_VERSION, true );
 
-	wp_enqueue_script( 'midday-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'midday-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), _MIDDAY_VERSION, true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
@@ -157,7 +157,7 @@ add_action( 'wp_enqueue_scripts', 'midday_scripts' );
  * Load and localize midday.js.
  */
 function midday_js() {
-	wp_enqueue_script( 'midday-js', get_theme_file_uri( '/js/midday.js' ), array(), _S_VERSION, true );
+	wp_enqueue_script( 'midday-js', get_theme_file_uri( '/js/midday.js' ), array(), _MIDDAY_VERSION, true );
 	// Localize the script with new data and pass php variables to JS.
 	$midday_js_data = array(
 		/** FOR LATER USE. */
