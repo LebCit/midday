@@ -27,7 +27,7 @@ if ( ! function_exists( 'midday_setup' ) ) :
 		 * If you're building a theme based on MidDay, use a find and replace
 		 * to change 'midday' to the name of your theme in all the template files.
 		 */
-		load_theme_textdomain( 'midday', get_template_directory() . '/languages' );
+		load_theme_textdomain( 'midday' );
 
 		// Add default posts and comments RSS feed links to head.
 		add_theme_support( 'automatic-feed-links' );
