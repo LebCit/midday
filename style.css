@@ -1309,11 +1309,9 @@ h3 {
     }
     .unit-lg-2-5 {
         width: 40%;
-        *width: 39.969%;
     }
     .unit-lg-3-5 {
         width: 60%;
-        *width: 59.969%;
     }
     .site-header {
         position: fixed;
@@ -1335,7 +1333,6 @@ h3 {
         bottom: 0;
         left: 0;
         background-color: rgba(0, 0, 0, 0.6);
-        max-width: 40%;
     }
     /* The emerging W3C standard
    that is currently Firefox-only */
