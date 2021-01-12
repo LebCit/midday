@@ -4,8 +4,8 @@
  * Handles navigation's behaviour (Open/Close).
  * Traps TAB inside navigation.
  */
-let openCloseMenu_middayMenu = {};
-openCloseMenu_middayMenu.App = (function () {
+let midday_openCloseMenu = {};
+midday_openCloseMenu.App = (function () {
     const navButton = document.getElementById('menu-button');
     const navMenu = document.querySelector('#main-nav');
     const navLinks = navMenu.querySelectorAll("li a");
@@ -110,5 +110,5 @@ openCloseMenu_middayMenu.App = (function () {
 
 window.addEventListener('DOMContentLoaded', (event) => {
     event.preventDefault();
-    new openCloseMenu_middayMenu.App.init();
+    new midday_openCloseMenu.App.init();
 });
