@@ -624,6 +624,35 @@ a:active {
     outline: 0;
 }
 
+.entry-content a:not(.read-more-link),
+.entry-summary a:not(.read-more-link),
+.comment-content a,
+.textwidget a {
+    text-decoration-line: underline;
+    text-decoration-color: #EA215A;
+    text-decoration-style: double;
+    text-decoration-thickness: .125em;
+    text-underline-offset: 1.5px;
+}
+
+.entry-content a:not(.read-more-link):hover,
+.entry-content a:not(.read-more-link):focus,
+.entry-content a:not(.read-more-link):active,
+.entry-summary a:not(.read-more-link):hover,
+.entry-summary a:not(.read-more-link):focus,
+.entry-summary a:not(.read-more-link):active,
+.comment-content a:hover,
+.comment-content a:focus,
+.comment-content a:active,
+.textwidget a:hover,
+.textwidget a:focus,
+.textwidget a:active {
+    text-decoration: none;
+    background: #000;
+    color: #fff;
+    outline: thin dotted #EA215A;
+}
+
 /*--------------------------------------------------------------
 ## Menus
 --------------------------------------------------------------*/
