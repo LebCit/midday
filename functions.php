@@ -199,7 +199,7 @@ function midday_fallback_menu() {
 		$html     .= '</a>';
 	$html         .= '</li>';
 	$html         .= '<li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-home">';
-		$html     .= '<a href="' . esc_url( 'https://wordpress.org/' ) . '" target="_blank">';
+		$html     .= '<a href="' . esc_url( 'https://github.com/LebCit/midday/wiki/MidDay-documentation' ) . '" target="_blank">';
 			$html .= esc_html__( 'Theme Documentation', 'midday' );
 		$html     .= '</a>';
 	$html         .= '</li>';
