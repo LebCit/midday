@@ -979,8 +979,8 @@ this the same font stack that Normalize.css sets for the `body`.
 
 .unit-1 {
     display: inline-block;
-    *display: inline;
-    zoom: 1;
+    transform:scale(1);
+    transform-origin: 0 0;
     letter-spacing: normal;
     word-spacing: normal;
     vertical-align: top;
@@ -1300,8 +1300,8 @@ h3 {
     .unit-lg-2-5,
     .unit-lg-3-5 {
         display: inline-block;
-        *display: inline;
-        zoom: 1;
+        transform:scale(1);
+        transform-origin: 0 0;
         letter-spacing: normal;
         word-spacing: normal;
         vertical-align: top;
