@@ -154,19 +154,6 @@ function midday_scripts() {
 add_action( 'wp_enqueue_scripts', 'midday_scripts' );
 
 /**
- * Load and localize midday.js.
- */
-function midday_js() {
-	wp_enqueue_script( 'midday-js', get_theme_file_uri( '/js/midday.js' ), array(), _MIDDAY_VERSION, true );
-	// Localize the script with new data and pass php variables to JS.
-	$midday_js_data = array(
-		/** FOR LATER USE. */
-	);
-	wp_localize_script( 'midday-js', 'midday_vars', $midday_js_data );
-}
-add_action( 'wp_enqueue_scripts', 'midday_js' );
-
-/**
  * Filter the excerpt length to 30 words.
  *
  * @see https://developer.wordpress.org/reference/functions/the_excerpt/#comment-325
