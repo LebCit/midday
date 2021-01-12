@@ -9,7 +9,7 @@
 
 if ( ! defined( '_MIDDAY_VERSION' ) ) {
 	// Replace the version number of the theme on each release.
-	define( '_MIDDAY_VERSION', '20.12.05' );
+	define( '_MIDDAY_VERSION', '21.01.12' );
 }
 
 if ( ! function_exists( 'midday_setup' ) ) :
