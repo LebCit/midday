@@ -68,7 +68,7 @@
 					<?php endif; ?>
 			</div><!-- .site-branding -->
 
-			<nav class="nav">
+			<nav id="nav" class="nav">
 				<ul class="nav-list">
 					<li class="nav-item">
 						<a id="menu-button" aria-controls="main-nav" aria-haspopup="true" tabindex="0" role="button">

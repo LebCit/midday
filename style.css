@@ -385,10 +385,6 @@ h6 {
     clear: both;
 }
 
-p {
-    /*margin-bottom: 1.5em;*/
-}
-
 dfn,
 cite,
 em,
@@ -1029,6 +1025,7 @@ html,
     letter-spacing: normal;
     overflow-x: hidden;
     transition: 0.5s;
+    visibility: hidden;
 }
 
 .overlay-content {
@@ -1278,7 +1275,7 @@ h3 {
     }
 }
 
-@media (max-width: 63.938em) {
+@media (max-width: 63.969em) {
     .hide {
         display: none;
     }
